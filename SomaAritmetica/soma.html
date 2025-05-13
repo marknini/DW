@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma Aritmética</title>
+</head>
+<body>
+    <h2>Apenas Soma</h2>
+
+    <label>Valor 1: <input type="number" id="valor1"></label><br><br>
+    <label>Valor 2: <input type="number" id="valor2"></label><br><br>
+
+    <button onclick="somar()">Somar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        const somar = () => {
+            const a = parseFloat(document.getElementById("valor1").value);
+            const b = parseFloat(document.getElementById("valor2").value);
+            const resultado = a + b;
+            document.getElementById("resultado").innerText = "Resultado: " + resultado;
+        };
+    </script>
+</body>
+</html>
